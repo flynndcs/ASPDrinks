@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<WebApplication1.Models.Drink> 
 
-@*@{
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-}*@
+}
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -33,9 +33,9 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit")
-            @Html.ActionLink("Details", "Details")
-            @Html.ActionLink("Delete", "Delete")
+            @Html.ActionLink("Edit", "Edit", new { Id = item.Id })
+            @Html.ActionLink("Details", "Details", new { Id = item.Id })
+            @Html.ActionLink("Delete", "Delete", new { Id = item.Id })
         </td>
     </tr>
     
