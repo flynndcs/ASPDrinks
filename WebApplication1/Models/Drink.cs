@@ -16,8 +16,5 @@ namespace WebApplication1.Models
 
     }
 
-    public class DrinkDBContext : DbContext
-    {
-        public DbSet<Drink> Drinks { get; set; }
-    }
+   
 }
