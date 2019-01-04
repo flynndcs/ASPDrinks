@@ -7,7 +7,7 @@ namespace WebApplication1.Models
 {
     public class DrinkContext : DbContext
     {
-        public DrinkContext() : base("name = MyConnectionString")
+        public DrinkContext() : base("name = MyASPDrinksConnection")
         { }
 
         public DbSet<Drink> Drinks { get; set; }

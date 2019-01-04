@@ -12,7 +12,7 @@ namespace WebApplication1.Views
 {
     public class DrinksController : Controller
     {
-        private DrinkDBContext db = new DrinkDBContext();
+        private DrinkContext db = new DrinkContext();
 
         // GET: Drinks
         public ActionResult Index()
